@@ -45,9 +45,9 @@ services:
       - ./nginx/sites-enabled:/etc/nginx/sites-enabled
       - ./nginx/logs:/var/log/nginx
     ports:
-      - 80:80
+      - 90:80
       - 443:443
-      - 3000:3000
+      - 3090:3000
     depends_on:
       - next-ts-app
       - next-js-app
